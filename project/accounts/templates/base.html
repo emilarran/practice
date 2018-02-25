@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'accounts/style.css' %}">
+	{% block head %}
+	<title>Base</title>
+	{% endblock %}
+</head>
+<body>
+	<a href="/"><h2>Sample Site</h2></a>
+	<p><a href="/account/register">Register</a></p>
+	{% block body %}
+	{% endblock %}
+</body>
+</html>
